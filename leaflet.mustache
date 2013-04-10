@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Metro Violence</title>
+	<title>{{titleName}}</title>
 	<meta charset="utf-8" />
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-<meta property="og:description" content="Mexican Presidential Election 2012"/>
-<meta property="og:image" content="http://4.bp.blogspot.com/-bmcxI5K3ZdI/URmgDj3eVII/AAAAAAAAGKM/B_rkQ_bedm4/s400/plot.png"/>
-<meta property="og:type" content="website"/>
-<meta property="og:site_name" content="Mexican Presidential Election 2012"/>
-<meta property="og:title" content="Mexican Presidential Election 2012"/>
-<meta property="og:url" content="http://www.diegovalle.net/mordor"/>
-<meta content="808656520" property="fb:admins"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
@@ -165,25 +158,25 @@ info.update = function (props) {
     this._div.innerHTML = '<h1>'+title+'</h1>' + '<div><h4>Total Population</h4>' +  (props ?
 										      '' + props.POB1
 										      : 'Hover over an AGEB') +
-        '</div><div class="pca"><h4><a href="/hoyodemarginacion.html">Margination Index</a> (-125 to 125)</h4>' +  (props ?
+        '</div><div class="pca"><h4><a href="/maps/mxc/hoyodemarginacion.html">Margination Index</a> (higher is better)</h4>' +  (props ?
 														    '' + props.pca 
 														    : '&nbsp;') +
-        '</div><div class="POB30_R"><h4><a href="/hoyoderucos.html">Median Age</a> </h4>' +  (props ?
+        '</div><div class="POB30_R"><h4><a href="/maps/mxc/hoyoderucos.html">Median Age</a> </h4>' +  (props ?
 											      '' + props.POB30_R
 											      : '&nbsp;') +
-        '</div><div class="hawt"><h4><a href="/hoyodelobukis.html">Percentage of 18-24 year olds who are women</a> </h4>' +  (props ?
+        '</div><div class="hawt"><h4><a href="/maps/mxc/hoyodelobukis.html">Percentage of 18-24 year olds who are women</a> </h4>' +  (props ?
 															      '' + props.hawt + "%"
 															      : '&nbsp;') +
-        '</div><div class="RELIG4_R"><h4><a href="/hoyodesatanas.html">Percent with no religion</a> </h4>' +  (props ?
+        '</div><div class="RELIG4_R"><h4><a href="/maps/mxc/hoyodesatanas.html">Percent with no religion</a> </h4>' +  (props ?
 													       '' + props.RELIG4_R + '%'
 													       : '&nbsp;') +
-        '</div><div class="kids"><h4><a href="/hoyodemonstruos.html">Percentage over 15 years of age</a> </h4>' +  (props ?
+        '</div><div class="kids"><h4><a href="/maps/mxc/hoyodemonstruos.html">Percentage over 15 years of age</a> </h4>' +  (props ?
 														    '' + props.kids + '%'
 														    : '&nbsp;') +
-        '</div><div class="den"><h4><a href="/hoyodesardinas.html">Population Density</a> </h4>' +  (props ?
+        '</div><div class="den"><h4><a href="/maps/mxc/hoyodesardinas.html">Population Density</a> </h4>' +  (props ?
 												     '' + props.den  + 'e6 people / degree<sup>2</sup>'
 												     : '&nbsp;') +
-        '</div><div class="VIV28_R"><h4><a href="/hoyodetrafico.html">Households with vehicles</a> </h4>' +  (props ?
+        '</div><div class="VIV28_R"><h4><a href="/maps/mxc/hoyodetrafico.html">Households with vehicles</a> </h4>' +  (props ?
 													      '' + props.VIV28_R + '%'
 				: '&nbsp;') + '</div>'
     ;
